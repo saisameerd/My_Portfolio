@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
+:root{
+  --orange:#ffa500;
+  --black:#000;
+  --white:#fff;
+  --border:2rem solid var(--black);
+  --box-shadow:0 1rem 1.5rem rgba(0,0,0.3);
 
+}
 
 
 *{
@@ -10,4 +17,43 @@
     border: none;
     text-decoration: none;
     text-transform:capitalize;
+    cursor: none;
 }
+
+*:active > .cursor{
+    transform: translateX(-40%) rotate(-45deg);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: var(--orange);
+}
+
+html::-webkit-scrollbar-thumb{
+background: var(--black);
+}
+
+body{
+    background: var(--orange);
+    overflow-x: hidden;
+}
+
+.cursor{
+    position: absolute;
+    top: -5rem;left: -8rem;
+    height:5rem;
+    pointer-events: none;
+    transform:translateX(-40%);
+    z-index: 10000;
+}
+
+
