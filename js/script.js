@@ -7,9 +7,13 @@ window.onmousemove = (e) =>{
 
 let navbar = document.querySelector('.navbar');
 
-// let menu_btn = document.querySelector('#menu-btn');
+let menu_btn = document.querySelector('#menu-btn');
 
-document.querySelector('#menu-btn').onclick = () =>{
+menu_btn.onclick = () =>{
     navbar.classList.toggle('active');
+}
+
+window.onscroll = () =>{
+    navbar.classList.remove('active');
 }
 

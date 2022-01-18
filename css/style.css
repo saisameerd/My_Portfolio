@@ -116,14 +116,117 @@ color: var(--purple);
 }
 
 .navbar a{
-    font-size: 3rem;
+    font-size: 2.4rem;
     color: var(--white);
     transition: .2s linear ;
+    padding: 0.5rem 0.8rem;
 }
 
 .navbar a:hover{
     color:var(--purple) ;
     background: var(--white);
-    font-size:2.3rem ;
-    padding: 1.5rem 1.8rem;
+    font-size:2.1rem ;
+    padding: 1.5rem 1.6rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media (max-width:1200px){
+ .header{
+     padding: 1.5rem 5%;
+ }
+ .navbar a{
+    font-size: 2rem;
+    color: var(--white);
+    transition: .2s linear ;
+    padding: 0.4rem 0.8rem;
+}
+
+}
+
+@media (max-width:1020px){
+    html{
+        font-size: 55%;
+    }
+    .cursor{
+        display: none;
+    }
+    .header{
+        padding: 1.2rem 2rem;
+    }
+
+    .navbar.active{
+        right: 5%;
+    }
+}
+
+
+ @media (max-width:768px){
+    .header{
+        padding: 1.2rem 5%;
+    }
+    .navbar{
+        width: 100%;
+        border: none;
+    }
+
+    .navbar.active{
+        right:0;
+    }
+
+    .navbar a{
+        font-size: 3rem;
+        color: var(--white);
+        transition: .2s linear;
+        border:0.2rem solid var(--white);
+        padding:1.7rem 2rem ;
+    }
+
+    .navbar a:hover{
+        font-size:3rem ;
+        padding: 2rem 2.2rem;
+    }
+
+
+   }
+
+   
