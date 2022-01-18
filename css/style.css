@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 :root{
-  --orange:#ffa500;
+  --orange:#49b6ff;
   --black:#000;
   --white:#fff;
   --border:2rem solid var(--black);
@@ -50,9 +50,8 @@ body{
 .cursor{
     position: absolute;
     top: -5rem;left: -8rem;
-    height:5rem;
+    height:3rem;
     pointer-events: none;
-    transform:translateX(-40%);
     z-index: 10000;
 }
 
