@@ -25,7 +25,7 @@
 }
 
 html{
-    font-size: 60%;
+    font-size: 62.5%;
     overflow-x: hidden;
     scroll-padding-top: 5rem;
 }
@@ -55,17 +55,17 @@ body{
 .cursor{
     position: absolute;
     top: -5rem;left: -8rem;
-    height:3rem;
+    height:2.5rem;
     pointer-events: none;
     z-index: 10000;
-    transition-duration: 100ms;
+    transition-duration: 80ms;
 }
 
 .header{
     padding: 1.5rem 10%;
     position: fixed;
     top: 0;left: 0;right: 0;
-    z-index: 1000;
+    z-index: 1;
     background: var(--yellow);
     display: flex;
     align-items: center;
@@ -73,11 +73,11 @@ body{
 }
 
 .header .logo{
-    font-size: 2rem;
+    font-size: 2.1rem;
     color: var(--purple);
 }
 
-.header #menu-btn {
+/* .header #menu-btn {
     height: 4rem;
     width: 4rem;
     line-height: 3.5rem;
@@ -87,31 +87,23 @@ body{
     font-size: 1.5rem;
     text-align: center;
 
-}
-
+} */
+/* 
 .header #menu-btn:hover {
 background: var(--purple);
 color: var(--white);
-}
+} */
 
 .navbar {
     position: fixed;
-    width: 23%;
-    height:70%;
-    bottom: 15%;
-    top:-120%;
     right: 0;
-    background: var(--purple);
-    padding: 0 5%;
-    z-index: 1000;
+    padding: 0 5rem;
     display: flex;
-    flex-flow: column;
-    justify-content: center;
+    flex-direction: row;
+    z-index: 1;
+    justify-content:space-between;
     align-items: center;
-    gap: 1.5rem;
-    border: 0.5rem solid white;
-    transition: .4s linear;
-}
+    }
 
 .navbar.active{
     top:15%;
@@ -122,34 +114,33 @@ color: var(--purple);
 }
 
 .navbar a{
-    font-size: 2.4rem;
-    color: var(--white);
+    font-size: 2.1rem;
+    color: var(--purple);
     transition: .2s linear ;
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem 2rem;
     text-align: center;
 }
 
 .navbar a:hover{
-    color:var(--purple) ;
-    background: var(--white);
-    font-size:2.1rem ;
-    padding: 1.5rem 1.6rem;
+    color:var(--yellow) ;
+    background: var(--purple);
+    font-size:2rem ;
+    transition: .8s ;
 }
 
 .home{
-    margin-top: 4.3rem;
+    margin-top: 4rem;
     position: relative;
-    line-height: 3rem;
+    line-height: 4rem;
 
 }
 
 .home h3{
     text-align: center;
-    font-size: 5.5vw;
+    font-size: 5.2vw;
     text-transform: uppercase;
     color: var(--purple);
-
-
+    position: relative;
 }
 
 .home .home-text{
@@ -159,24 +150,7 @@ color: var(--purple);
     z-index: 10;
 }
 
-.home .home-img{
-    position: absolute;
-    height: 23rem;
-    width: 22rem;
-    pointer-events: none;
-    transition: .2s linear;
-    object-fit: cover;
-    transform: translate(-50%,-70%) scale(0);
 
-}
-
-.home .home-text:hover {
-    text-shadow: var(--box-shadow);
-}
-
-.home .home-text:hover ~ .home-img{
-    transform: translate(-50%,-70%) scale(1);
-}
 
 
 
