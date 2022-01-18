@@ -4,7 +4,7 @@
   --yellow:#feed01;
   --purple:#8900f2;
   --white:#fff;
-  --border:2rem solid var(--purple);
+  --border:0.3rem solid var(--purple);
   --box-shadow:0 1rem 1.5rem rgba(0,0,0.3);
 
 }
@@ -72,4 +72,58 @@ body{
     color: var(--purple);
 }
 
+.header #menu-btn {
+    height: 5rem;
+    width: 5rem;
+    line-height: 4.7rem;
+    border-radius: 50%;
+    border: var(--border);
+    background: var(--white);
+    font-size: 1.7rem;
+    text-align: center;
 
+}
+
+.header #menu-btn:hover {
+background: var(--purple);
+color: var(--white);
+}
+
+.navbar {
+    position: fixed;
+    width: 25%;
+    height:70%;
+    bottom: 15%;
+    right: -120%;
+    background: var(--purple);
+    padding: 0 5%;
+    z-index: 1000;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    border: 0.5rem solid white;
+    transition: .4s linear;
+}
+
+.navbar.active{
+    right:10%;
+}
+
+.fa-bars{
+color: var(--purple);
+}
+
+.navbar a{
+    font-size: 3rem;
+    color: var(--white);
+    transition: .2s linear ;
+}
+
+.navbar a:hover{
+    color:var(--purple) ;
+    background: var(--white);
+    font-size:2.3rem ;
+    padding: 1.5rem 1.8rem;
+}
