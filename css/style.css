@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 :root{
   --yellow:#feed01;
@@ -62,7 +62,7 @@ body{
 }
 
 .header{
-    padding: 1.5rem 10%;
+    padding: 1.5rem 8%;
     position: fixed;
     top: 0;left: 0;right: 0;
     z-index: 1;
@@ -73,7 +73,8 @@ body{
 }
 
 .header .logo{
-    font-size: 2.1rem;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 2.2rem;
     color: var(--purple);
 }
 
@@ -114,10 +115,11 @@ color: var(--purple);
 }
 
 .navbar a{
-    font-size: 2.1rem;
+    font-size: 2rem;
+    font-weight: 300;
     color: var(--purple);
     transition: .2s linear ;
-    padding: 0.5rem 2rem;
+    padding: 1rem 2rem;
     text-align: center;
 }
 
