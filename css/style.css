@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 :root{
-  --orange:#49b6ff;
-  --black:#000;
+  --yellow:#feed01;
+  --purple:#8900f2;
   --white:#fff;
-  --border:2rem solid var(--black);
+  --border:2rem solid var(--purple);
   --box-shadow:0 1rem 1.5rem rgba(0,0,0.3);
 
 }
@@ -20,8 +20,8 @@
     cursor: none;
 }
 
-*:active > .cursor{
-    transform: translateX(-40%) rotate(-45deg);
+*:active >.cursor{
+    transform: translateX(-40%) rotate(-30deg);
 }
 
 html{
@@ -31,19 +31,19 @@ html{
 }
 
 html::-webkit-scrollbar{
-    width: 1rem;
+    width: 0.5rem;
 }
 
 html::-webkit-scrollbar-track{
-    background: var(--orange);
+    background: var(--yellow);
 }
 
 html::-webkit-scrollbar-thumb{
-background: var(--black);
+background: var(--purple);
 }
 
 body{
-    background: var(--orange);
+    background: var(--yellow);
     overflow-x: hidden;
 }
 
@@ -53,6 +53,23 @@ body{
     height:3rem;
     pointer-events: none;
     z-index: 10000;
+    transition-duration: 100ms;
+}
+
+.header{
+    padding: 1.5rem 10%;
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    z-index: 1000;
+    background: var(--yellow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    color: var(--purple);
 }
 
 
