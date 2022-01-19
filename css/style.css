@@ -355,17 +355,61 @@ flex-direction: row;
     width: 10rem;
     height: 10rem;
     padding: 1rem;
+    animation: move 3s infinite alternate;
 }
 
 .grid-item{
   text-align: center;
 }
 
+.fa-git-alt{
+    animation: move 3s infinite alternate;
+}
+
+
+.grid-item>.fa-github{
+    animation: move 3s infinite alternate;
+}
 
 .skills-content{
     font-size: 1.7rem;
     padding-left: 10%;
+    padding-top: 6%;
 }
+
+.skills>h1{
+    font-size: 2.5rem;
+    text-align: center;
+    text-decoration: underline;
+    color: var(--purple);
+    padding-bottom: 0;
+}
+
+.projects h1{
+    font-size: 2.5rem;
+    text-align: center;
+    text-decoration: underline;
+    color: var(--purple);
+}
+
+.projects .projects-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4rem 1rem 0 0;
+}
+
+.projects-cards .card{
+    font-size: 1.8rem;
+    background-color: transparent;
+    border-radius: 15%;
+    border: 0.2rem solid var(--purple);
+}
+
+.projects-cards .card-body {
+    text-align: center;
+}
+
 
 
 
