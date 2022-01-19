@@ -32,6 +32,11 @@ html{
 
 section{
     padding: 5rem 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 85vh;
+    position: relative;
 }
 
 html::-webkit-scrollbar{
@@ -110,8 +115,12 @@ color: var(--white);
     top:15%;
 }
 
-.fa-bars{
+.fas{
 color: var(--purple);
+}
+
+.far{
+    color: var(--purple);
 }
 
 .navbar a{
@@ -142,14 +151,163 @@ color: var(--purple);
     font-size: 5.2vw;
     text-transform: uppercase;
     color: var(--purple);
-    position: relative;
+    z-index: 10;
 }
 
 .home .home-text{
     -webkit-text-stroke: .2rem var(--purple);
-    position: relative;
+    font-size: 7vw;
     color: var(--white);
     z-index: 10;
+}
+
+.home .square{
+    height: 2.5rem;
+    width: 2.5rem;
+    clip-path: polygon(5% 11%, 94% 11%, 83% 80%, 9% 95%);
+    border-radius: 10%;
+    position: relative;
+    top: 10%;
+    left:5%;
+    background-color: var(--purple);
+    animation: round 5s infinite alternate;
+}
+
+.home .circle{
+    height: 2.5rem;
+    width: 2.5rem;
+    clip-path: circle(50% at 50% 50%);
+    position: relative;
+    top: 45%;
+    left:25%;
+    background-color: #e0aaff;
+    animation: move 3s infinite alternate;
+}
+
+.home .triangle{
+    height: 2.8rem;
+    width: 2.5rem;
+    clip-path: polygon(29% 12%, 0% 100%, 100% 100%);
+    position: absolute;
+    bottom:10%;
+    right: 12%;
+    background-color: #5a189a;
+    animation: move 2.7s infinite alternate;
+}
+
+.home .circle{
+    height: 2.5rem;
+    width: 2.5rem;
+    clip-path: circle(50% at 50% 50%);
+    position: relative;
+    top: 20%;
+    left:20%;
+    background-color: #9602ec;
+    animation: move 2.96s infinite alternate;
+}
+
+.home .square-2{
+    top: 8%;
+    right:5%;
+    position: absolute;
+    height: 2rem;
+    width: 2.5rem;
+    background-color: transparent;
+    border: .3rem solid #5603ad;
+    animation: round 4s infinite alternate;
+}
+
+.home .circle-2{
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    top:10%;
+    right: 28%;
+    border-radius: 90%;
+    background-color: transparent;
+    border: .3rem solid #e0aaff ;
+    animation: move 2s infinite alternate;
+}
+
+.home .square-3{
+    bottom: 10%;
+    left:5%;
+    position: absolute;
+    height: 2rem;
+    width: 2.5rem;
+    background-color: transparent;
+    border: .3rem solid #a34ffd;
+    animation: round 3.4s infinite alternate;
+}
+
+.home .triangle-2{
+    height: 2.3rem;
+    width: 2.8rem;
+    clip-path: polygon(29% 12%, 0% 100%, 100% 100%);
+    position: absolute;
+    bottom:10%;
+    right: 12%;
+    background-color: #c082ff;
+    animation: move 2.9s infinite alternate;
+}
+
+.home .square-4{
+    height: 2.9rem;
+    width: 2.9rem;
+    clip-path: polygon(5% 11%, 94% 11%, 83% 80%, 9% 95%);
+    border-radius: 10%;
+    position: relative;
+    top: 0;
+    left:6%;
+    background-color: #ce9ffd;
+    animation: round 5s infinite alternate;
+}
+
+.home .triangle-3{
+    height: 2.4rem;
+    width: 2.8rem;
+    clip-path: polygon(29% 12%, 0% 100%, 100% 100%);
+    position: absolute;
+    top: 10%;
+    left:45%;
+    background-color: #c489ff;
+    animation: round 3.2s infinite alternate;
+}
+
+.home .square-5{
+    height: 2.9rem;
+    width: 2.9rem;
+    clip-path: polygon(5% 11%, 94% 11%, 83% 80%, 9% 95%);
+    position: absolute;
+    bottom: 45%;
+    right:13%;
+    background-color: #8627e6;
+    animation: round 4.6s infinite alternate;
+}
+
+.home .circle-3{
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    top:50%;
+    left: 10%;
+    border-radius: 90%;
+    background-color: transparent;
+    border: .3rem solid #d294f7 ;
+    animation: move 2.2s infinite alternate;
+}
+
+.home .circle-4{
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    top:60%;
+    left: 50%;
+    border-radius: 90%;
+    z-index: -1;
+    background-color: transparent;
+    border: .3rem solid #6805a1 ;
+    animation: move 2.5s infinite alternate;
 }
 
 
@@ -187,6 +345,28 @@ color: var(--purple);
 
 
 
+
+
+/* animation  */
+
+@keyframes round{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes move{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translatey(4rem);
+    }
+}
 
 
 
