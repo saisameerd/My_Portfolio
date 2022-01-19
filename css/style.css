@@ -6,7 +6,6 @@
   --white:#fff;
   --border:0.3rem solid var(--purple);
   --box-shadow:0 0.8rem 1rem rgba(0,0,0.2);
-
 }
 
 
@@ -27,7 +26,7 @@
 html{
     font-size: 62.5%;
     overflow-x: hidden;
-    scroll-padding-top: 5rem;
+    scroll-padding-top: 3rem;
 }
 
 section{
@@ -41,7 +40,7 @@ section{
 
 
 html::-webkit-scrollbar{
-    width: 0.5rem;
+    width: 0.8rem;
 }
 
 html::-webkit-scrollbar-track{
@@ -55,6 +54,7 @@ background: var(--purple);
 body{
     background: var(--yellow);
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 
@@ -131,6 +131,7 @@ color: var(--purple);
     transition: .2s linear ;
     padding: 1rem 2rem;
     text-align: center;
+    text-decoration: none;
 }
 
 .navbar a:hover{
@@ -355,21 +356,13 @@ flex-direction: row;
     width: 10rem;
     height: 10rem;
     padding: 1rem;
-    animation: move 3s infinite alternate;
 }
 
 .grid-item{
   text-align: center;
 }
 
-.fa-git-alt{
-    animation: move 3s infinite alternate;
-}
 
-
-.grid-item>.fa-github{
-    animation: move 3s infinite alternate;
-}
 
 .skills-content{
     font-size: 1.7rem;
@@ -413,8 +406,6 @@ flex-direction: row;
 footer{
     height: auto;
     width: 100vw;
-    margin-top: 8%;
-    padding: 5% 30% ;
     color: var(--purple);
 }
 
@@ -426,19 +417,37 @@ footer{
 }
 
 .footer-content h3{
-    font-size: 4rem;
+    font-size: 1.8rem;
     font-weight: 600;
-    line-height: 3rem;
 }
 
 .footer-content p{
     font-size: 1.8rem;
-    padding-bottom: 20%;
     padding-top: 0;
 }
 
 .footer-content li{
     list-style-type: none;
+    color: var(--purple);
+}
+
+.logos .fab{
+color: var(--purple);
+}
+
+.logos .fab:hover{
+    color: rgb(226, 11, 226);
+    }
+
+.footer-content ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    height: auto;
+    font-size: 4rem;
+    padding:1rem ;
 }
 
 .footer-bottom{
@@ -446,53 +455,14 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top:20%;
     padding-bottom: 0;
     margin-bottom: 0;
 }
 
 .footer-bottom p{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* animation  */
 
@@ -602,5 +572,3 @@ section{
 
 
    }
-
-   
