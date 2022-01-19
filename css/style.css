@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&family=Sacramento&display=swap');
 
 :root{
   --yellow:#feed01;
@@ -27,6 +27,7 @@ html{
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-padding-top: 3rem;
+    scroll-behavior: smooth;
 }
 
 section{
@@ -79,9 +80,11 @@ body{
 }
 
 .header .logo{
-    font-family: 'Cedarville Cursive', cursive;
-    font-size: 2.2rem;
+    font-family: 'Sacramento', cursive;
+    font-size: 3rem;
     color: var(--purple);
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /* .header #menu-btn {
@@ -105,6 +108,7 @@ color: var(--white);
     position: fixed;
     right: 0;
     padding: 0 5rem;
+    padding-top: 1rem;
     display: flex;
     flex-direction: row;
     z-index: 1;
@@ -202,7 +206,7 @@ color: var(--purple);
 }
 
 .home .square-2{
-    top: 8%;
+    top: 10%;
     right:5%;
     position: absolute;
     height: 2rem;
@@ -349,7 +353,7 @@ flex-direction: row;
 .grid-content{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    padding:3rem 3rem 3rem 0;
+    padding:7rem 3rem 3rem 0;
 }
 
 .grid-content div img{
@@ -362,21 +366,12 @@ flex-direction: row;
   text-align: center;
 }
 
-
-
 .skills-content{
     font-size: 1.7rem;
     padding-left: 10%;
-    padding-top: 6%;
+    padding-top: 10%;
 }
 
-.skills>h1{
-    font-size: 2.5rem;
-    text-align: center;
-    text-decoration: underline;
-    color: var(--purple);
-    padding-bottom: 0;
-}
 
 .projects h1{
     font-size: 2.5rem;
@@ -419,6 +414,8 @@ footer{
 .footer-content h3{
     font-size: 1.8rem;
     font-weight: 600;
+    padding-top: 4rem;
+    text-decoration: underline;
 }
 
 .footer-content p{
