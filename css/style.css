@@ -31,13 +31,14 @@ html{
 }
 
 section{
-    padding: 5rem 10%;
+    padding: 5rem 7%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 85vh;
+    height: 90vh;
     position: relative;
 }
+
 
 html::-webkit-scrollbar{
     width: 0.5rem;
@@ -63,7 +64,7 @@ body{
     height:2.5rem;
     pointer-events: none;
     z-index: 10000;
-    transition-duration: 80ms;
+    transition-duration: 50ms;
 }
 
 .header{
@@ -156,10 +157,12 @@ color: var(--purple);
 
 .home .home-text{
     -webkit-text-stroke: .2rem var(--purple);
-    font-size: 7vw;
+    font-size: 6vw;
     color: var(--white);
     z-index: 10;
 }
+
+/*   background animation*/
 
 .home .square{
     height: 2.5rem;
@@ -167,22 +170,13 @@ color: var(--purple);
     clip-path: polygon(5% 11%, 94% 11%, 83% 80%, 9% 95%);
     border-radius: 10%;
     position: relative;
-    top: 10%;
+    top:5rem;
     left:5%;
     background-color: var(--purple);
     animation: round 5s infinite alternate;
 }
 
-.home .circle{
-    height: 2.5rem;
-    width: 2.5rem;
-    clip-path: circle(50% at 50% 50%);
-    position: relative;
-    top: 45%;
-    left:25%;
-    background-color: #e0aaff;
-    animation: move 3s infinite alternate;
-}
+
 
 .home .triangle{
     height: 2.8rem;
@@ -298,16 +292,51 @@ color: var(--purple);
 }
 
 .home .circle-4{
-    height: 3rem;
+    height: 3.1rem;
     width: 3rem;
     position: absolute;
-    top:60%;
+    top:55%;
     left: 50%;
     border-radius: 90%;
     z-index: -1;
-    background-color: transparent;
-    border: .3rem solid #6805a1 ;
+    background-color: #6805a1 ;
     animation: move 2.5s infinite alternate;
+}
+
+/*   background animation  ends*/
+
+.about h1{
+    font-size: 3rem;
+    color: var(--purple);
+}
+
+
+.about .about-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: justify;
+    padding: 1rem 0;
+}
+
+.about-content .about-me{
+    margin: 0;
+    padding:1rem 0;
+    box-sizing: border-box;
+    color: var(--black);
+    font-size: 1.8rem;
+}
+
+.about-content .about-img{
+  margin: 0;
+  padding:0;
+}
+
+.about-content img{
+    width: 40rem;
+    height :30rem;
+    margin-left: 5rem;
+    animation: move 2s infinite alternate;
 }
 
 
@@ -442,6 +471,10 @@ section{
         transition: .2s linear;
         border:0.2rem solid var(--white);
         padding:0.5rem 0.6rem ;
+    }
+
+   .navbar a {
+       transition: all 0.3s ease 0s;
     }
 
     .navbar a:hover{
