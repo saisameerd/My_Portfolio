@@ -65,7 +65,7 @@ body{
     height:2.5rem;
     pointer-events: none;
     z-index: 10000;
-    transition-duration: 50ms;
+    transition-duration: 10ms;
 }
 
 .header{
@@ -330,6 +330,7 @@ color: var(--purple);
     box-sizing: border-box;
     color: var(--black);
     font-size: 1.8rem;
+    z-index: 1;
 }
 
 .about-content .about-img{
@@ -342,6 +343,7 @@ color: var(--purple);
     height :30rem;
     margin-left: 5rem;
     animation: move 2s infinite alternate;
+    z-index: 1;
 }
 
 .skills .container{
