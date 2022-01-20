@@ -27,7 +27,6 @@ html{
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-padding-top: 3rem;
-    scroll-behavior: smooth;
 }
 
 section{
@@ -64,7 +63,7 @@ body{
     top: -5rem;left: -8rem;
     height:2.5rem;
     pointer-events: none;
-    z-index: 10000;
+    z-index: 1000;
     transition-duration: 10ms;
 }
 
@@ -72,7 +71,7 @@ body{
     padding: 1.5rem 8%;
     position: fixed;
     top: 0;left: 0;right: 0;
-    z-index: 1000;
+    z-index: 100;
     background: var(--yellow);
     display: flex;
     align-items: center;
@@ -111,7 +110,7 @@ color: var(--white);
     padding-top: 1rem;
     display: flex;
     flex-direction: row;
-    z-index: 1000;
+    z-index: 100;
     justify-content:space-between;
     align-items: center;
     }
@@ -157,14 +156,14 @@ color: var(--purple);
     font-size: 5.2vw;
     text-transform: uppercase;
     color: var(--purple);
-    z-index: 10;
+    z-index: -1;
 }
 
 .home .home-text{
     -webkit-text-stroke: .2rem var(--purple);
     font-size: 6vw;
     color: var(--white);
-    z-index: 10;
+    z-index: -1;
 }
 
 /*   background animation*/
