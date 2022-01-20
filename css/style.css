@@ -367,50 +367,12 @@ flex-direction: row;
   text-align: center;
 }
 
+
 .skills-content{
     font-size: 1.7rem;
     padding-left: 10%;
-    padding-top: 10%;
 }
 
-
-.projects h1{
-    font-size: 2.5rem;
-    text-align: center;
-    text-decoration: underline;
-    color: var(--purple);
-}
-
-.projects .projects-cards{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 4rem 1rem 0 0;
-}
-
-.projects-cards .card{
-    font-size: 1.8rem;
-    background-color: transparent;
-    border-radius: 15%;
-    border: 0.2rem solid var(--purple);
-}
-
-.projects-cards .card-body {
-    text-align: center;
-}
-
-footer{
-    height: auto;
-    width: 100vw;
-    color: var(--purple);
-}
-
-.footer-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
 .footer-content h3{
     font-size: 1.8rem;
