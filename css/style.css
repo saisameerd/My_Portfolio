@@ -60,7 +60,7 @@ body{
 
 
 .cursor{
-    position: absolute;
+    position: fixed;
     top: -5rem;left: -8rem;
     height:2.5rem;
     pointer-events: none;
