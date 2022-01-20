@@ -18,15 +18,11 @@
     text-transform:capitalize;
 }
 
-*:active >.cursor{
-    transform: translateX(-40%) rotate(-30deg);
-}
 
 html{
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-padding-top: 3rem;
-    scroll-behavior: smooth;
 }
 
 section{
@@ -56,7 +52,6 @@ body{
     overflow-x: hidden;
     overflow-y: hidden;
 }
-
 
 
 
@@ -149,7 +144,6 @@ color: var(--purple);
     text-transform: uppercase;
     color: var(--purple);
     z-index: -1;
-    cursor: default;
 
 }
 
@@ -158,7 +152,6 @@ color: var(--purple);
     font-size: 6vw;
     color: var(--white);
     z-index: -1;
-    cursor: default;
 
 }
 
@@ -170,7 +163,7 @@ color: var(--purple);
     clip-path: polygon(5% 11%, 94% 11%, 83% 80%, 9% 95%);
     border-radius: 10%;
     position: relative;
-    top:2%;
+    top:5rem;
     left:5%;
     background-color: var(--purple);
     animation: round 5s infinite alternate;
@@ -251,8 +244,8 @@ color: var(--purple);
     clip-path: polygon(5% 11%, 94% 11%, 83% 80%, 9% 95%);
     border-radius: 10%;
     position: relative;
-    top:-10%;
-    left:5%;
+    top: 0;
+    left:6%;
     background-color: #ce9ffd;
     animation: round 5s infinite alternate;
 }
@@ -363,50 +356,12 @@ flex-direction: row;
   text-align: center;
 }
 
+
 .skills-content{
     font-size: 1.7rem;
     padding-left: 10%;
-    padding-top: 10%;
 }
 
-
-.projects h1{
-    font-size: 2.5rem;
-    text-align: center;
-    text-decoration: underline;
-    color: var(--purple);
-}
-
-.projects .projects-cards{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 4rem 1rem 0 0;
-}
-
-.projects-cards .card{
-    font-size: 1.8rem;
-    background-color: transparent;
-    border-radius: 15%;
-    border: 0.2rem solid var(--purple);
-}
-
-.projects-cards .card-body {
-    text-align: center;
-}
-
-footer{
-    height: auto;
-    width: 100vw;
-    color: var(--purple);
-}
-
-.footer-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
 .footer-content h3{
     font-size: 1.8rem;
