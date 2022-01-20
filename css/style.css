@@ -23,6 +23,7 @@ html{
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-padding-top: 3rem;
+    scroll-behavior: smooth;
 }
 
 section{
@@ -344,7 +345,7 @@ flex-direction: row;
 .grid-content{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    padding:7rem 3rem 3rem 0;
+    padding:10rem 3rem 3rem 0;
 }
 
 .grid-content div img{
@@ -361,6 +362,7 @@ flex-direction: row;
 .skills-content{
     font-size: 1.7rem;
     padding-left: 10%;
+    padding-top: 8%;
 }
 
 
@@ -371,22 +373,32 @@ flex-direction: row;
     color: var(--purple);
 }
 
+
+
 .projects .projects-cards{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 4rem 1rem 0 0;
+    padding: 3rem 1rem 0 0;
 }
 
 .projects-cards .card{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     background-color: transparent;
     border-radius: 15%;
     border: 0.2rem solid var(--purple);
+    padding: 0 0.2rem 0 ;
 }
 
 .projects-cards .card-body {
     text-align: center;
+}
+
+.card-body .card-title{
+    padding: 0;
+}
+.card-body .card-subtitle{
+    padding: 0;
 }
 
 footer{
@@ -400,6 +412,7 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 5%;
 }
 
 .footer-content h3{
@@ -436,6 +449,7 @@ color: var(--purple);
     height: auto;
     font-size: 4rem;
     padding:1rem ;
+
 }
 
 .footer-bottom{
